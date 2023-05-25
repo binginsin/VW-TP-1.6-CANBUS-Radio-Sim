@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>CanMFDBluetooth</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\BINGINSIN\Documents\Arduino\libraries\BM83\BM83Lib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\CanMFDBluetooth;E:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\SPI;C:\Users\BINGINSIN\Documents\Arduino\libraries\arduino-mcp2515-master;C:\Users\BINGINSIN\Documents\Arduino\libraries\Queue-1.8.0\src;C:\Users\BINGINSIN\Documents\Arduino\libraries\BM83\src;E:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\Snooze\src;E:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3;E:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr;E:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\util;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include;E:\Program Files (x86)\Arduino\hardware\tools\arm\lib\gcc\arm-none-eabi\5.4.1\include;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include\c++\5.4.1;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include\c++\5.4.1\tr1;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include\c++\5.4.1\bits;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include\c++\5.4.1\arm-none-eabi;E:\Program Files (x86)\Arduino\hardware\teensy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.CanMFDBluetooth.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__HARDWARE_mkl26z64__;__HARDWARE_MKL26Z64__;__MKL26Z64__;TEENSYDUINO=153;ARDUINO=108013;ARDUINO_TEENSYLC;F_CPU=48000000;USB_SERIAL;LAYOUT_US_ENGLISH;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\CanMFDBluetooth;E:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\SPI;C:\Users\BINGINSIN\Documents\Arduino\libraries\arduino-mcp2515-master;C:\Users\BINGINSIN\Documents\Arduino\libraries\Queue-1.8.0\src;C:\Users\BINGINSIN\Documents\Arduino\libraries\BM83\src;E:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3;E:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr;E:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\util;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include;E:\Program Files (x86)\Arduino\hardware\tools\arm\lib\gcc\arm-none-eabi\5.4.1\include;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include\c++\5.4.1;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include\c++\5.4.1\tr1;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include\c++\5.4.1\bits;E:\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include\c++\5.4.1\arm-none-eabi;E:\Program Files (x86)\Arduino\hardware\teensy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.CanMFDBluetooth.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__HARDWARE_mkl26z64__;__HARDWARE_MKL26Z64__;_VMDEBUG=1;__MKL26Z64__;TEENSYDUINO=153;ARDUINO=108013;ARDUINO_TEENSYLC;F_CPU=48000000;USB_SERIAL;LAYOUT_US_ENGLISH;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CanMFDBluetooth.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Functions.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.CanMFDBluetooth.vsarduino.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="usb:0/140000/0/9" config.Debug.customdebug_teensy41_debugger_type="universal" config.Debug.customdebug_teensyLC_debugger_type="universal" debug.view.FreeMemory="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

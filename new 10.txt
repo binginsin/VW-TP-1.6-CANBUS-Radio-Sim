@@ -1,0 +1,30 @@
+680 06 A0 04 59 FF 32 FF radio makes a connection request 
+681 06 A1 04 8A FF 32 FF the display responds 
+680 05 10 00 52 00 FF the radio starts initializing by reporting its identifier - 52. The counter starts with 0 
+681 01 B1 confirmation - data received 
+681 08 20 20 01 11 00 11 00 11 the display responds with its own parameters. The counter starts at 0 
+681 08 21 00 11 00 0A 00 0D 00 
+681 03 12 11 00 
+680 01 B3 the radio has confirmed reception 
+680 03 11 01 12 the radio is requesting the central area of ​​the screen 
+681 01 B2 confirmation - the data has been received
+681 08 13 21 00 04 00 6E 00 5B the display corresponds to the parameters of the screen area 110x91 
+680 01 B4 confirmation - data received 
+680 08 22 02 70 52 12 41 75 64 the radio binds the area to its identifier and sets the name of the page to "Aud" 
+680 03 13 69 6F "io" continues to send the name 
+681 01 B4 confirmation - data received 
+681 05 14 23 00 00 00 23 xx 00 00 - xx = 00 identifier of the area of ​​the central part of the screen. About the team a little lower. 
+680 01 B5 confirmation - data received
+
+
+
+681 05 1C 23 00 01 00 the display says that the screen area 00 is available for drawing 
+680 01 BD confirmed the reception 
+680 08 2F 09 00 60 09 00 00 00 we start sending data ( command 09) for the screen area 00    
+680 08 20 00 00 6E 00 5B 00 61 in these messages we erase the entire area and write the text AUTO in the center and in the lower left corner of FM1 
+680 08 21 0A 10 00 37 00 1E 00       
+680 08 02 41 42 54 4F 61 0A 00 
+681 01 B3 display acknowledged                        
+680 08 23 00 03 00 47 00 46 4D continue to send 
+680 04 14 02 02 31 08 finished sending, (command 08) 
+681 01 B5 the display confirmed receipt 

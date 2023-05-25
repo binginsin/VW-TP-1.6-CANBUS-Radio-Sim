@@ -1,0 +1,5 @@
+1. Get bluetooth hardware figured out. DONE
+2. Move for loops into a re-usable method. DONE
+3. Figure out button presses.
+4. Add bluetooth support in the code.
+5. Do the nice to haves.
